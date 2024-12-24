@@ -1,0 +1,55 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables for Consistency */
+:root {
+  --primary-color: #4f46e5; /* Indigo-600 */
+  --primary-hover: #4338ca; /* Indigo-700 */
+  --secondary-color: #10b981; /* Green-500 */
+  --secondary-hover: #059669; /* Green-600 */
+  --accent-color: #f59e0b; /* Amber-500 */
+  --accent-hover: #d97706; /* Amber-600 */
+  --background-color: #f9fafb; /* Gray-50 */
+  --text-color: #1f2937; /* Gray-800 */
+  --text-secondary: #4b5563; /* Gray-600 */
+  --card-bg: #ffffff; /* White */
+}
+
+/* Apply Custom Colors */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+
+button {
+  color: var(--text-color);
+}
+
+/* Additional Styling for Improved Readability */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+.section-bg {
+  background-color: var(--background-color);
+}
+
+.card-bg {
+  background-color: var(--card-bg);
+}
+
+.card-text {
+  color: var(--text-color);
+}
