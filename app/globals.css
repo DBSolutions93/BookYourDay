@@ -1,4 +1,5 @@
-/* src/styles/globals.css */
+
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -52,4 +53,28 @@ p {
 
 .card-text {
   color: var(--text-color);
+}
+
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="ltr"] body {
+  direction: ltr;
+  text-align: left;
+}
+
+html {
+  scroll-padding-top: 80px; /* Adjust based on your header's height */
+}
+
+/* Add global RTL-specific styles */
+[dir="rtl"] .nav-menu {
+  gap: 1rem; /* Adjust for RTL */
+}
+
+[dir="rtl"] .button-group {
+  gap: 1rem; /* Adjust for RTL */
 }

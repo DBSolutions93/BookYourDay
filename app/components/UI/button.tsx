@@ -1,4 +1,5 @@
 // src/components/ui/button.tsx
+"use client";
 
 import React from 'react';
 import classNames from 'classnames';

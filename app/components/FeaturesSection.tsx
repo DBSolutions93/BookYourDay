@@ -1,4 +1,6 @@
+"use client";
 
+import { useTranslation } from "../Translations/TranslationContext"
 import { 
   Clock, 
   Users, 
@@ -8,7 +10,7 @@ import {
   Calendar, 
   BellRing, 
   BarChart3 
-} from 'lucide-react';
+} from "lucide-react";
 
 type Feature = {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -16,54 +18,58 @@ type Feature = {
   description: string;
 };
 
-const features: Feature[] = [
-  {
-    icon: Clock,
-    title: 'Provide online bookings 24/7',
-    description: 'A scheduling app keeps your business available for booking 24/7, allowing your customers to book at their convenience. Provide an exceptional booking experience and gain more loyal customers.'
-  },
-  {
-    icon: Users,
-    title: 'Organize employees with flexibility',
-    description: 'Create flexible and specific schedules for your employees. Manage all staff calendars from one dashboard or allow them to self-schedule.'
-  },
-  {
-    icon: HeartHandshake,
-    title: 'Take care of your customers',
-    description: 'BookYourDay\'s CRM enables you to create customer lists and maintain customer data. Learn about your customers\' favorite services, send them birthday greetings or loyalty coupons, and provide the best possible customer experience.'
-  },
-  {
-    icon: MapPin,
-    title: 'Manage multi-location business',
-    description: 'If you have more than one business location, you don\'t need a different tool for each one. Manage all your locations with BookYourDay appointment scheduling app and have the entire business organization in one place.'
-  },
-  {
-    icon: CreditCard,
-    title: 'Get paid online',
-    description: 'Accept online payments through secure payment gateways, automatically send invoices, and easily receive payment for your services, all safely and on time.'
-  },
-  {
-    icon: Calendar,
-    title: 'Sync your calendars',
-    description: 'Connect your Outlook or Google Calendar with BookYourDay and have a single view of all your booked appointments. Calendar sync helps you avoid double bookings and scheduling conflicts.'
-  },
-  {
-    icon: BellRing,
-    title: 'Reduce no shows',
-    description: 'Don\'t waste time on manual text reminders. Send automated email, SMS or WhatsApp reminders to your customers before an appointment and reduce no-shows to a great extent.'
-  },
-  {
-    icon: BarChart3,
-    title: 'Gain insight into business performance',
-    description: 'With a single glance at BookYourDay\'s dashboard, you can track your business occupancy, returning customer rate, most in-demand employees and services, and view your earnings.'
-  }
-];
-
 export function Features() {
+  const  { t } = useTranslation(); // Use 'common' namespace for translations
+
+  const features: Feature[] = [
+    {
+      icon: Clock,
+      title: t("features.0.title"),
+      description: t("features.0.description"),
+    },
+    {
+      icon: Users,
+      title: t("features.1.title"),
+      description: t("features.1.description"),
+    },
+    {
+      icon: HeartHandshake,
+      title: t("features.2.title"),
+      description: t("features.2.description"),
+    },
+    {
+      icon: MapPin,
+      title: t("features.3.title"),
+      description: t("features.3.description"),
+    },
+    {
+      icon: CreditCard,
+      title: t("features.4.title"),
+      description: t("features.4.description"),
+    },
+    {
+      icon: Calendar,
+      title: t("features.5.title"),
+      description: t("features.5.description"),
+    },
+    {
+      icon: BellRing,
+      title: t("features.6.title"),
+      description: t("features.6.description"),
+    },
+    {
+      icon: BarChart3,
+      title: t("features.7.title"),
+      description: t("features.7.description"),
+    },
+  ];
+
   return (
     <section id="features" className="py-20 bg-gradient-to-b from-primary/10 to-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Powerful Features</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-primary">
+          {t("features_title")} {/* Fetches "Powerful Features" */}
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div 
@@ -80,5 +86,5 @@ export function Features() {
         </div>
       </div>
     </section>
-  )
+  );
 }

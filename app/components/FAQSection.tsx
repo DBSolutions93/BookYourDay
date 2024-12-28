@@ -1,33 +1,19 @@
-'use client' 
+'use client'
 
 import { useState } from 'react';
+import { useTranslation } from "../Translations/TranslationContext"
 
 type FAQ = {
   question: string;
   answer: string;
 };
 
-const faqs: FAQ[] = [
-  {
-    question: 'Is there a free trial available?',
-    answer: 'Yes, we offer a 14-day free trial with full access to all features.',
-  },
-  {
-    question: 'Can I upgrade or downgrade my plan later?',
-    answer: 'Absolutely! You can change your plan at any time from your account settings.',
-  },
-  {
-    question: 'Does BOOKYOURDAY integrate with Google Calendar?',
-    answer: 'Yes, BOOKYOURDAY seamlessly integrates with Google Calendar for easy synchronization.',
-  },
-  {
-    question: 'Is my data secure?',
-    answer: 'We prioritize security and use industry-standard measures to protect your data.',
-  },
-];
-
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const { t } = useTranslation();
+
+  // Explicitly cast the returned value to FAQ[]
+  const faqs = t('faqs') as unknown as FAQ[] || [];
 
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -36,7 +22,9 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-semibold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold text-gray-800 text-center mb-8">
+          {t('faq_title')} {/* Fetches the title: "Frequently Asked Questions" */}
+        </h2>
         <div className="max-w-2xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border rounded-lg">
