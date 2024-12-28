@@ -1,4 +1,5 @@
-// src/components/DashboardSection.tsx
+"use client";
+
 import Image from 'next/image';
 
 const DashboardSection = () => {
@@ -13,6 +14,7 @@ const DashboardSection = () => {
               width={1000}
               height={450}
               className="rounded-lg shadow-lg"
+              priority={true}
             />
           </div>
         </div>

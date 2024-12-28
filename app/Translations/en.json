@@ -1,0 +1,134 @@
+{
+    "title": "BOOKYOURDAY - Simplify Your Scheduling",
+    "description": "Manage your appointments effortlessly with BOOKYOURDAY, the intuitive scheduling software designed to enhance your productivity.",
+    "dashboard_image_alt": "Dashboard Example",
+    "faq_title": "Frequently Asked Questions",
+    "get_started": "Get Started",
+    "watch_demo": "Watch Demo",
+    "header_brand": "BOOKYOURDAY",
+    "header_features": "Features",
+    "header_pricing": "Pricing",
+    "header_testimonials": "Testimonials",
+    "header_faq": "FAQ",
+    "header_login": "Login",
+    "faqs": [
+      {
+        "question": "Is there a free trial available?",
+        "answer": "Yes, we offer a 14-day free trial with full access to all features."
+      },
+      {
+        "question": "Can I upgrade or downgrade my plan later?",
+        "answer": "Absolutely! You can change your plan at any time from your account settings."
+      },
+      {
+        "question": "Does BOOKYOURDAY integrate with Google Calendar?",
+        "answer": "Yes, BOOKYOURDAY seamlessly integrates with Google Calendar for easy synchronization."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "We prioritize security and use industry-standard measures to protect your data."
+      }
+    ]
+    ,
+    "hero_title": "Simplify Your Schedule with BookYourDay",
+    "hero_subtitle": "Effortlessly manage appointments, boost productivity, and take control of your time with our intelligent scheduling platform.",
+    "features_title": "Powerful Features",
+    "features": [
+      {
+        "title": "Provide online bookings 24/7",
+        "description": "A scheduling app keeps your business available for booking 24/7, allowing your customers to book at their convenience. Provide an exceptional booking experience and gain more loyal customers."
+      },
+      {
+        "title": "Organize employees with flexibility",
+        "description": "Create flexible and specific schedules for your employees. Manage all staff calendars from one dashboard or allow them to self-schedule."
+      },
+      {
+        "title": "Take care of your customers",
+        "description": "BookYourDay's CRM enables you to create customer lists and maintain customer data. Learn about your customers' favorite services, send them birthday greetings or loyalty coupons, and provide the best possible customer experience."
+      },
+      {
+        "title": "Manage multi-location business",
+        "description": "If you have more than one business location, you don't need a different tool for each one. Manage all your locations with BookYourDay appointment scheduling app and have the entire business organization in one place."
+      },
+      {
+        "title": "Get paid online",
+        "description": "Accept online payments through secure payment gateways, automatically send invoices, and easily receive payment for your services, all safely and on time."
+      },
+      {
+        "title": "Sync your calendars",
+        "description": "Connect your Outlook or Google Calendar with BookYourDay and have a single view of all your booked appointments. Calendar sync helps you avoid double bookings and scheduling conflicts."
+      },
+      {
+        "title": "Reduce no shows",
+        "description": "Don't waste time on manual text reminders. Send automated email, SMS or WhatsApp reminders to your customers before an appointment and reduce no-shows to a great extent."
+      },
+      {
+        "title": "Gain insight into business performance",
+        "description": "With a single glance at BookYourDay's dashboard, you can track your business occupancy, returning customer rate, most in-demand employees and services, and view your earnings."
+      }
+    ],
+    "footer_brand": "BOOKYOURDAY",
+    "footer_copy": "© 2024 BOOKYOURDAY. All rights reserved.",
+    "footer_resources": "Resources",
+    "footer_follow_us": "Follow Us",
+    "footer_contact": "Contact Us",
+    "footer_privary_policy": "Privacy Policy",
+    "footer_about_us": "About Us",
+    "pricing_title": "Pricing",
+    "plans": [
+      {
+        "name": "Individual",
+        "price": "35 OMR/mo",
+        "features": [
+          "Up to 20 appointments per month",
+          "Basic calendar features",
+          "Automated reminders",
+          "Email support"
+        ],
+        "buttonText": "Choose Individual"
+      },
+      {
+        "name": "Professional",
+        "price": "50 OMR/mo",
+        "features": [
+          "Unlimited appointments",
+          "Advanced calendar features",
+          "Automated reminders",
+          "Team management",
+          "Priority support"
+        ],
+        "buttonText": "Choose Professional"
+      },
+      {
+        "name": "Custom",
+        "price": "Contact Us",
+        "features": [
+          "All Professional features",
+          "Custom integrations",
+          "Dedicated account manager",
+          "24/7 support",
+          "Multi-location management"
+        ],
+        "buttonText": "Contact Us"
+      }
+    ],
+    "testimonials_title": "What Our Users Say",
+    "testimonials": [
+      {
+        "name": "Jane Doe",
+        "role": "Business Owner",
+        "message": "BOOKYOURDAY has transformed the way I manage appointments. It’s intuitive and reliable!"
+      },
+      {
+        "name": "John Smith",
+        "role": "Freelancer",
+        "message": "The automated reminders have significantly reduced my no-show rate. Highly recommend!"
+      },
+      {
+        "name": "Emily Johnson",
+        "role": "Team Manager",
+        "message": "Managing my team’s schedules has never been easier. BOOKYOURDAY is a game-changer."
+      }
+    ]
+  }
+  

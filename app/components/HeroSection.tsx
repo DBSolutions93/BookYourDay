@@ -1,23 +1,28 @@
-// src/components/Hero.tsx
+"use client";
 
 import { Button } from './UI/button';
 import { Calendar } from 'lucide-react';
+import { useTranslation } from "../Translations/TranslationContext"
+
 
 export function Hero() {
+
+  const { t }  = useTranslation(); // 'common' is the namespace from the JSON file
+
   return (
-    <section className="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-b from-primary/20 to-white">
+    <section className="pt-24 pb-5 md:pt-32 md:pb-10 bg-gradient-to-b from-primary/20 to-white">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left lg:pl-6">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
-              Simplify Your Schedule with BookYourDay
+          <div className="text-center lg:text-left lg:pl-6 mb-20">
+            <h1 className="p-10 text-4xl md:text-6xl font-bold mb-10 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
+              {t("hero_title")}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Effortlessly manage appointments, boost productivity, and take control of your time with our intelligent scheduling platform.
+            {t("hero_subtitle")}
             </p>
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button size="lg">Get Started</Button>
-              <Button size="lg" variant="outline">Watch Demo</Button>
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-0 sm:space-y-0 sm:space-x-8 button-group" >
+              <Button size="lg">{t("get_started")}</Button>
+              <Button size="lg" variant="outline">{t("watch_demo")}</Button>
             </div>
             <div className="mt-8 flex items-center justify-center lg:justify-start space-x-4 text-sm text-gray-600">
               <div className="flex items-center">
